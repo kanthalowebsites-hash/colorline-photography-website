@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-forest: #162D25;
+  --color-sage: #607763;
+  --color-gold: #BA9A5D;
+  --color-cream: #EBDFD1;
+}
+
+html,body,#__next{
+  height:100%;
+}
+
+body{
+  @apply font-raleway bg-cream text-forest leading-relaxed;
+}
+
+/* Global utilities for editorial headings */
+.editorial-title{
+  letter-spacing: -0.02em;
+}
+
+/* subtle image hover */
+.image-hover-zoom:hover img{
+  transform: scale(1.03);
+}
+
+/* navbar backdrop blur when scrolled */
+.backdrop-blur-sm{
+  backdrop-filter: blur(6px);
+}
